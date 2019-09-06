@@ -19,7 +19,6 @@ def persist_object(object, filename):
 
 
 def parse_object(filename):
-    print(filename)
     with open(filename, 'rb') as file:
         obj = pickle.load(file)
 
