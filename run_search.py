@@ -1,8 +1,7 @@
-import os
-
 from search_lib.search_index import create_index
 from search_lib.persist_index import *
 from search_lib.search import search
+
 
 def build_and_persist_index(maildir_root, tf_file, idf_file, trie_file, doc_locs_file, test=False):
     tf, idf, trie, doc_locations = create_index(maildir_root, test=test)

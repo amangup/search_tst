@@ -1,6 +1,7 @@
 import pickle
 import os
 
+
 def persist_dict(mapping, filename):
     if os.path.isfile(filename):
         os.remove(filename)

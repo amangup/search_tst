@@ -1,5 +1,3 @@
-
-
 class TrieNode(object):
     def __init__(self, char: str):
         self.char = char
@@ -50,10 +48,6 @@ def find_words_with_prefix(root, prefix):
     word_list = []
     _find_all_words_dfs_(node, prefix[:-1], word_list)
 
-
-    # Well, we are here means we have found the prefix. Return true to indicate that
-    # And also the counter of the last node. This indicates how many words have this
-    # prefix
     return True, node.counter, word_list
 
 
