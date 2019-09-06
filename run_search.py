@@ -36,5 +36,4 @@ if __name__ == '__main__':
                             test=True)
     idf, trie, doc_locs = load_index(idf_file, trie_file, doc_locs_file)
 
-    print(len(doc_locs))
     print("\n\n".join(search('add', "tf.index", idf, trie, doc_locs)))
